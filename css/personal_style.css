@@ -226,6 +226,10 @@
           width: 15%;
         }
 
+        .tab_inner .msg-contents .msg-topinner, .tab_inner .msg-contents .msg-bottominner {
+          margin-right: 40px;
+        }
+
         .tab_inner .msg-contents .msg-bottominner ul li:nth-child(odd) {
           float: none;
           width: 100%;
