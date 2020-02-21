@@ -110,6 +110,34 @@
                               <td>16</td>
                               <td>2</td>
                             </tr>
+                            <tr>
+                              <td>2019/07/16</td>
+                              <td class="long_text"><a class="openDetails">丁稚どんメルマガ2019年7月号</a></td>
+                              <td>89</td>
+                              <td>16</td>
+                              <td>2</td>
+                            </tr>
+                            <tr>
+                              <td>2019/07/16</td>
+                              <td class="long_text"><a class="openDetails">丁稚どんメルマガ2019年7月号</a></td>
+                              <td>89</td>
+                              <td>16</td>
+                              <td>2</td>
+                            </tr>
+                            <tr>
+                              <td>2019/07/16</td>
+                              <td class="long_text"><a class="openDetails">丁稚どんメルマガ2019年7月号</a></td>
+                              <td>89</td>
+                              <td>16</td>
+                              <td>2</td>
+                            </tr>
+                            <tr>
+                              <td>2019/07/16</td>
+                              <td class="long_text"><a class="openDetails">丁稚どんメルマガ2019年7月号</a></td>
+                              <td>89</td>
+                              <td>16</td>
+                              <td>2</td>
+                            </tr>
                           </tbody>
                         </table>
                         <div class="table_details">
@@ -128,7 +156,7 @@
                   <div class="msg-contents">
                     <div class="msg-topinner">
                       <div class="top-leftinner">
-                        <p class="changeFontSize"><img src="image/point.svg" alt="アイコン"/><span><a class="underline">上記タイトル</a>をクリックすると詳細情報を確認できます</span></p>
+                        <p><img src="image/point.svg" alt="アイコン"/><span><a class="underline">上記タイトル</a>をクリックすると詳細情報を確認できます</span></p>
                       </div>
                     </div>
                     <div class="msg-bottominner">
@@ -136,37 +164,37 @@
                         <ul>
                           <div class="text-container1">
                             <div class="text-container1-left">
-                              <p class="changeFontSize">（※1）</p>
+                              <p>（※1）</p>
                             </div>
                             <div class="text-container1-right">
-                              <p class="changeFontSize">企業・団体名は固定IPアドレスにてアクセスされた場合のみ特定可能です。</p>
+                              <p>企業・団体名は固定IPアドレスにてアクセスされた場合のみ特定可能です。</p>
                             </div>
                           </div>
 
                           <div class="text-container1">
                             <div class="text-container1-left">
-                              <p class="changeFontSize">（※2）</p>
+                              <p>（※2）</p>
                             </div>
                             <div class="text-container1-right">
-                              <p class="changeFontSize">累計アクセス数とはサービス開始日より1年間の累計とし、2年目以降は逐次更新されます。</p>
+                              <p>累計アクセス数とはサービス開始日より1年間の累計とし、2年目以降は逐次更新されます。</p>
                             </div>
                           </div>
 
                           <div class="text-container1">
                             <div class="text-container1-left">
-                              <p class="changeFontSize">（※3）</p>
+                              <p>（※3）</p>
                             </div>
                             <div class="text-container1-right">
-                              <p class="changeFontSize">直近アクセス数とはログイン当日のアクセス数であり、当該欄に「－」と表示されている企業は前日以前にアクセスしたことを示します。その詳細は企業名をクリックすることで確認できます。</p>
+                              <p>直近アクセス数とはログイン当日のアクセス数であり、当該欄に「－」と表示されている企業は前日以前にアクセスしたことを示します。その詳細は企業名をクリックすることで確認できます。</p>
                             </div>
                           </div>
 
                           <div class="text-container1">
                           <div class="text-container1-left">
-                            <p class="changeFontSize">（※4）</p>
+                            <p>（※4）</p>
                           </div>
                           <div class="text-container1-right">
-                            <p class="changeFontSize">地域とはどこからアクセスしたかを示します。</p>
+                            <p>地域とはどこからアクセスしたかを示します。</p>
                           </div>
                         </div>
                         </ul>
@@ -499,15 +527,7 @@
         </div>
       </div>
       <script>
-        // ページ遷移した際、画面トップではなく「来訪した企業・団体名とアクセス数エリア」の表が表示される
-        $(function () {
-          var result = location.href;
-          if (result.includes("PageNum_company")){
-            	$('html,body').scrollTop(210);
-          };
-        });
-
-        //////////////////////////////// 開封率グラフ
+        //////////////////////////////// 配信数グラフ
         var resizeObject=document.getElementById("lineChart");
         resizeObject.width=window.innerWidth*0.1;
         resizeObject.height=window.innerHeight*0.08;
@@ -559,7 +579,7 @@
             }
         });
 
-        //////////////////////////////// クリック率グラフ
+        //////////////////////////////// 開封率グラフ
         let piechartElement=document.getElementById("pieChart");
         piechartElement.width=window.innerWidth*0.1;
 
@@ -589,7 +609,7 @@
                     return data.labels[tooltipItem.index]
                       + " : "
                       + data.datasets[0].data[tooltipItem.index]
-                      + "%"; //ここで単位を付けます
+                      + "%";
                   }
                 }
               }
@@ -616,27 +636,17 @@
           addClassOnSelectedElement(allTabs, selectedTab);
           addClassOnSelectedElement(allTabInners, targetTabInner);
 
-        //クリックされた要素をarrayから削除する
-              function addClassOnSelectedElement(allElements, selectedElement) {
-                allElements.some(function(v, n){
-                  if (v==selectedElement) allElements.splice(n,1);
-                });
+          function addClassOnSelectedElement(allElements, selectedElement) {
+            allElements.some(function(v, n){
+              if (v==selectedElement) allElements.splice(n,1);
+            });
 
-                for (i = 0; i < allElements.length; i++) {
-                  if($(allElements[i]).hasClass('clicked')) {
-                    $(allElements[i]).removeClass('clicked');
-                  }
-                }
-                $(selectedElement).addClass('clicked');
+            for (i = 0; i < allElements.length; i++) {
+              if($(allElements[i]).hasClass('clicked')) {
+                $(allElements[i]).removeClass('clicked');
               }
-
-        };
-
-        if(!agent.indexOf('edge') > -1) {
-          changeFontSize = document.getElementsByClassName("changeFontSize");
-          console.log(changeFontSize);
-          for (i = 0; i < changeFontSize.length; i++) {
-            $(changeFontSize[i]).css("font-size", "11px");
+            }
+            $(selectedElement).addClass('clicked');
           }
         };
 
