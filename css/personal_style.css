@@ -1,0 +1,260 @@
+@charset "utf-8";
+.personal_style {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.personal_style .report_name {
+  max-width: 1200px;
+}
+
+.personal_style #contents_inner {
+  height: auto;
+  margin-bottom: 20px;
+  max-width: 1200px;
+}
+
+.personal_style header{
+  height: 70px;
+}
+
+.personal_style .inner{
+  padding: 10px 20px 20px 20px !important;
+}
+
+    .personal_style #contents_inner .title-contents {
+      height: 50px;
+      margin-top: -25px;
+    }
+
+        .personal_style #contents_inner .title_leftinner {
+          padding-left: 40px;
+        }
+
+        .personal_style .update_date{
+          font-size: 13px !important;
+          font-size: 1.3rem !important;
+        }
+
+        .personal_style .title_rightinner .btn-contents {
+          margin-top: 10px;
+          margin-right: 20px;
+        }
+
+
+    .personal_style .subtitle-contents {
+      padding: 0 !important;
+      height: 30px;
+      color: rgb(163, 0, 38);
+      background-color: #fff;
+    }
+
+        .personal_style .subtitle-contents .subtitle_leftinner {
+          width: auto !important;
+          padding: 0;
+        }
+
+        .personal_style .subtitle-contents .subtitle_leftinner p {
+          line-height: 1.5 !important;
+        }
+
+        .personal_style .context {
+          padding: 0;
+          overflow-y: scroll;
+          height: 62vh;
+          margin-bottom: 0;
+        }
+
+              .personal_style #personal_tab_one_inner .context .text-container1-left {
+                width: 7%;
+              }
+
+              .personal_style #personal_tab_one_inner .context .text-container1-right {
+                width: 93%;
+              }
+
+#tabInners{
+  background-color: #fff;
+  padding: 20px;
+  margin-top: -1px;
+}
+
+#tabManagement:before, #tabManagement:after {
+  content: "";
+  display: block;
+}
+
+#tabManagement:after {
+  clear: both;
+}
+
+#tabManagement {
+   zoom: 1;
+}
+
+  #tabManagement > div {
+    float: left;
+    width: 16%;
+  	display: inline-block;
+  	padding: 10px 0 5px 20px;
+    font-size: 14px;
+    font-size: 1.4rem;
+  	position: relative;
+  	z-index: 1;
+    color: #fff;
+  }
+
+  #tabManagement > div::before {
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	z-index: -1;
+  	background: rgb(163, 0, 38);
+  	transform: scaleY(1.1) perspective(.6em) rotateX(3deg);
+  	transform-origin: bottom left;
+  	border-radius: 8px 8px 0 0;
+  }
+
+  #tabManagement > div:hover {
+    cursor: pointer;
+    color: #707070;
+  }
+
+  #tabManagement > div:hover:before {
+    background: #fff;
+  }
+
+.tab_inner:before, .tab_inner:after {
+    content: "";
+    display: block;
+  }
+
+  .tab_inner:after {
+    clear: both;
+  }
+
+  .tab_inner {
+     zoom: 1;
+  }
+
+    #personal_tab_one_inner .chart_container_left {
+      float: left;
+      width: 60%;
+    }
+
+    #personal_tab_two_inner .chart_container_left, #personal_tab_three_inner .chart_container_left {
+      float: left;
+      width: 80%;
+    }
+
+    .chart_container_right {
+      float: left;
+      width: 40%;
+    }
+
+            .chart_container_right .subtitle-contents {
+              margin-left: 10px;
+            }
+
+            .chart_container_right_inner {
+              margin-left: 10px;
+              padding: 10px;
+              box-sizing: border-box;
+              border: 1px solid #eee;
+              height: 62vh;
+            }
+
+                  .chart_container_right_inner .chart_title {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-size: 1.4rem;
+                    border-bottom: 1px solid #eee;
+                    color: rgb(163, 0, 38);
+                  }
+
+        #personal_tab_one_inner .table-contents table tr th:nth-child(2), #personal_tab_one_inner .table-contents table tr td:nth-child(2) {
+          width: 28%;
+        }
+
+        #personal_tab_one_inner .table-contents table tr th:nth-child(5), #personal_tab_one_inner .table-contents table tr td:nth-child(5) {
+          width: 20%;
+        }
+
+        #personal_tab_one_inner .table-contents table tr td:nth-child(5) {
+          text-align: right;
+          padding-right: 40px;
+          box-sizing: border-box;
+        }
+
+        #personal_tab_two_inner .table-contents table tr th:nth-child(1), #personal_tab_two_inner .table-contents table tr td:nth-child(1) {
+          width: 50%;
+        }
+
+        #personal_tab_two_inner .table-contents table tr th:nth-child(2), #personal_tab_two_inner .table-contents table tr td:nth-child(2) {
+          width: 30%;
+        }
+
+        #personal_tab_two_inner .table-contents table tr th:nth-child(3), #personal_tab_two_inner .table-contents table tr td:nth-child(3) {
+          width: 20%;
+          padding-right: 80px;
+        }
+
+        #personal_tab_three_inner .table-contents table tr th:nth-child(1), #personal_tab_three_inner .table-contents table tr td:nth-child(1) {
+          width: 40%;
+        }
+
+        #personal_tab_three_inner .table-contents table tr th:nth-child(2), #personal_tab_three_inner .table-contents table tr td:nth-child(2) {
+          width: 30%;
+        }
+
+        #personal_tab_three_inner .table-contents table tr th:nth-child(3), #personal_tab_three_inner .table-contents table tr td:nth-child(3) {
+          width: 15%;
+          text-align: left;
+        }
+
+        #personal_tab_three_inner .table-contents table tr th:nth-child(4), #personal_tab_three_inner .table-contents table tr td:nth-child(4) {
+          width: 15%;
+        }
+
+        .tab_inner .msg-contents .msg-bottominner ul li:nth-child(odd) {
+          float: none;
+          width: 100%;
+        }
+
+        .tab_inner .msg-contents .msg-bottominner ul li:nth-child(even) {
+          float: none;
+          width: 100%;
+        }
+
+
+.tab_inner{
+  display: none;
+}
+
+.clicked{
+  display: block;
+  color: #707070 !important;
+}
+
+.clicked:before {
+  background: #fff !important;
+}
+
+.clicked:hover {
+  cursor: default !important;
+  color: #707070 !important;
+}
+
+.clicked:hover:before {
+  background: #fff !important;
+}

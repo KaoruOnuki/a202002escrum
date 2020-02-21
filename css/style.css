@@ -1,0 +1,871 @@
+@charset "utf-8";
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Roboto, "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  color: #707070;
+  font-size: 16px;
+  font-size: 1.6rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  height: 20px;
+}
+
+#contents_inner {
+  height: 1290px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+    #contents_inner .title-contents {
+      background-color: rgb(163, 0, 38);
+      height: 80px;
+      margin-top: -55px;
+    }
+
+    #contents_inner .title-contents:before, #contents_inner .title-contents:after {
+      		content: "";
+      		display: block;
+        }
+
+        #contents_inner .title-contents:after {
+          clear: both;
+        }
+
+        #contents_inner .title-contents {
+           zoom: 1;
+         }
+
+            #contents_inner .title-contents .title_leftinner {
+              color: #fff;
+              float: left;
+              width: 50%;
+              padding-left: 60px;
+              padding-top: 10px;
+              box-sizing: border-box;
+            }
+
+                .title_leftinner .title_name{
+                  font-size: 20px;
+                  font-size: 2.0rem;
+                  font-weight: 500;
+                  padding-bottom: 5px;
+                }
+
+                .title_leftinner .date p{
+                  line-height: 16px;
+                }
+
+                    .title_leftinner .date p img{
+                      vertical-align: middle;
+                    }
+
+                    .title_leftinner .date p span{
+                      font-size: 13px;
+                      font-size: 1.3rem;
+                    }
+
+                    .title_leftinner .date p .update_date{
+                      padding-right: 15px;
+                      font-weight: 500;
+                      font-size: 14px;
+                      font-size: 1.4rem;
+                    }
+
+            #contents_inner .title-contents .title_rightinner {
+              color: #fff;
+              float: right;
+              width: 25%;
+              text-align: right;
+              box-sizing: border-box;
+            }
+
+                .title_rightinner .btn-contents{
+                  display: inline-block;
+                  background: -moz-linear-gradient(top, #FFF, #A2A2A2);
+                  background: -webkit-linear-gradient(top, #FFF, #A2A2A2);
+                  background: linear-gradient(to bottom, #FFF, #A2A2A2);
+                  margin: 8px 60px 7px 0;
+                  padding: 2px 15px;
+                  -webkit-border-radius: 5px;
+                  -moz-border-radius: 5px;
+                  -o-border-radius: 5px;
+                  border-radius: 5px;
+                  height: 25px;
+                }
+
+                .title_rightinner .btn-contents:hover{
+                  cursor: pointer;
+                  background: #A2A2A2;
+                }
+
+                    .title_rightinner .btn-contents img{
+                      vertical-align: middle;
+                      height: 20px;
+                    }
+
+                    .title_rightinner .btn-contents #button{
+                      vertical-align: middle;
+                      border: none;
+                      background: rgba(255, 255, 255, 0);
+                      font-size: 13px;
+                      font-size: 1.3rem;
+                      color: #707070;
+                      font-weight: 700;
+                    }
+
+                    .title_rightinner .btn-contents #button:hover{
+                      cursor: pointer;
+                      color: rgb(163, 0, 38);
+                    }
+
+                    .title_rightinner .tab-contents:before, .title_rightinner .tab-contents:after {
+                      content: "";
+                      display: block;
+                    }
+
+                    .title_rightinner .tab-contents:after {
+                      clear: both;
+                    }
+
+                    .title_rightinner .tab-contents {
+                       zoom: 1;
+                       height: 36px;
+                       box-shadow: 1px 1px 6px #72001e inset;
+                     }
+
+                         .title_rightinner .tab-contents a{
+                            color: #fff;
+                            text-decoration: none;
+                            font-size: 14px;
+                            font-size: 1.4rem
+                          }
+
+                              .title_rightinner .tab-contents:hover{
+                                 cursor: pointer;
+                               }
+
+                         .tab-contents .tab_japanese{
+                            float: left;
+                            width: 50%;
+                            height: 100%;
+                            text-align: center;
+                          }
+
+                          .current_page{
+                            background: #EDEDED;
+                          }
+
+                              .title_rightinner .tab-contents .current_page a{
+                                color: #333;
+                              }
+
+                              .current_page:hover, .current_page a:hover{
+                                cursor: default;
+                              }
+
+                              .tab-contents .tab_japanese p{
+                                 vertical-align: middle;
+                                 line-height: 35px;
+                               }
+
+                          .tab-contents .tab_english{
+                             float: right;
+                             width: 50%;
+                             height: 100%;
+                             text-align: center;
+                           }
+
+                               .tab-contents .tab_english p{
+                                  vertical-align: middle;
+                                  line-height: 35px;
+                                }
+    .inner {
+      background: #EDEDED;
+      padding: 20px 60px;
+    }
+
+        .companies_and_access:before, .companies_and_access:after {
+          		content: "";
+          		display: block;
+            }
+
+            .companies_and_access:after {
+              clear: both;
+            }
+
+            .companies_and_access {
+               zoom: 1;
+               margin: 0 auto;
+             }
+
+            .icon-contents{
+              text-align: center;
+              margin-top: -20px;
+              position: relative;
+              z-index: 3;
+              float: left;
+              width: 100%;
+            }
+
+            .icon-contents .icon_inner {
+              display: inline-block;
+              background: #fff;
+              height: 40px;
+              width: 40px;
+              -webkit-border-radius: 20px;
+              -moz-border-radius: 20px;
+              -o-border-radius: 20px;
+              border-radius: 20px;
+              line-height: 40px;
+              text-align: center;
+            }
+
+                .icon-contents img{
+                  vertical-align: middle;
+                  fill: rgb(163, 0, 38);
+                }
+
+/* header */
+header {
+  background-color: #707070;
+  height: 100px;
+  width: 100%;
+  padding: 5px 30px 0 30px;
+}
+
+.report_name {
+  max-width: 1020px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 26px;
+  font-size: 2.6rem;
+}
+
+/* 【index.html】 来訪した企業・団体名とアクセス数（閲覧ページ数）*/
+.subtitle-contents{
+  background: rgb(163, 0, 38);
+  color: #fff;
+  height: 50px;
+  padding: 0 60px;
+  position: relative;
+  z-index: 2;
+}
+
+    .subtitle_name {
+      font-size: 17px;
+      font-size: 1.7rem;
+    }
+
+    .subtitle-contents:before, .subtitle-contents:after {
+      		content: "";
+      		display: block;
+        }
+
+        .subtitle-contents:after {
+          clear: both;
+        }
+
+        .subtitle-contents {
+           zoom: 1;
+           margin: 0 auto;
+         }
+
+             .subtitle-contents .subtitle_leftinner {
+               float: left;
+               width: 70%;
+             }
+
+                 .subtitle-contents .subtitle_leftinner p {
+                   line-height: 50px;
+                   vertical-align: middle;
+                 }
+
+            .subtitle-contents .subtitle_rightinner {
+              float: right;
+              width: 25%;
+            }
+
+                .subtitle-contents .subtitle_rightinner p {
+                  margin: 10px 0;
+                  line-height: 30px;
+                  vertical-align: middle;
+                  background: #F7F7F7;
+                  color: #707070;
+                  font-size: 14px;
+                  font-size: 1.4rem;
+                }
+
+                    .subtitle-contents .subtitle_rightinner p:hover {
+                      cursor: text;
+                    }
+
+                    .subtitle-contents .subtitle_rightinner p img {
+                      line-height: 50px;
+                      vertical-align: middle;
+                      height: 20px;
+                      margin: 0 5px 0 15px;
+                    }
+.context {
+  background-color: #fff;
+  padding: 20px 60px 10px 60px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+    .table-contents {
+       font-size: 13px;
+       font-size: 1.3rem;
+     }
+
+        .table-contents .table-rightinner {
+          box-sizing: border-box;
+        }
+
+        .table-contents table {
+          border-collapse: collapse;
+          text-align: left;
+          border: 1px solid #707070;
+          width: 100%;
+        }
+
+            .long_text{
+              max-width: 100px;
+              width: 100px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-text-overflow: ellipsis;
+              -o-text-overflow: ellipsis;
+            }
+
+            .table-contents table img{
+              height: 16px;
+              vertical-align: middle;
+            }
+
+            .table-contents table a{
+              color: #707070;
+            }
+
+            .table-contents table .openDetails{
+              text-decoration: underline;
+            }
+
+                .table-contents table a:hover{
+                  text-decoration: none;
+                  cursor: pointer;
+                  color: rgb(163, 0, 38);
+                }
+
+            .table-contents table td {
+            	background: #F7F7F7;
+            }
+
+            .table-contents table tr:nth-child(odd) td {
+            	background: #fff;
+            }
+
+        .table-contents thead tr{
+          background-color: #707070;
+          color: #F7F7F7;
+        }
+
+			.table-contents thead tr .sorting_desc {
+         		 background-color: #707070;
+          		 color: #F7F7F7;
+        	}
+
+			.table-contents thead tr .sorting_asc {
+         		 background-color: #707070;
+          		 color: #F7F7F7;
+        	}
+
+			.table-contents thead tr .sorting {
+         		 background-color: #707070;
+          		 color: #F7F7F7;
+        	}
+
+            .table-contents thead th{
+              font-weight: normal;
+              line-height: 1.2;
+            }
+
+                .table-contents thead th, .table-contents tbody td{
+                  padding: 5px 10px;
+                  height: 25px;
+                }
+
+                    .table-contents table tr th:nth-child(1), .table-contents table tr td:nth-child(1){
+                      width: 12%;
+                    }
+
+                    .table-contents table tr th:nth-child(2), .table-contents table tr td:nth-child(2){
+                      width: 36%;
+                    }
+
+                    .table-contents table tr th:nth-child(3),  .table-contents table tr th:nth-child(4), .table-contents table tr td:nth-child(3),  .table-contents table tr td:nth-child(4){
+                      width: 17%;
+                    }
+
+                        .table-contents table tr td:nth-child(3),  .table-contents table tr td:nth-child(4){
+                          text-align: right;
+                          padding-right: 40px;
+                        }
+
+                    .table-contents table tr th:nth-child(5), .table-contents table tr td:nth-child(5){
+                      width: 12%;
+                    }
+
+      .table_details {
+        margin-top: 10px;
+      }
+
+         .table_details p{
+            line-height: 24px;
+            vertical-align: middle;
+          }
+
+      .table_details:before, .table_details:after {
+        		content: "";
+        		display: block;
+          }
+
+          .table_details:after {
+            clear: both;
+          }
+
+          .table_details {
+             zoom: 1;
+             margin: 10px auto;
+           }
+
+              .table_details .numbers{
+                float: left;
+                width: 50%;
+                padding-left: 5px;
+                box-sizing: border-box;
+              }
+
+              .table_details .pages{
+                float: left;
+                width: 50%;
+                text-align: right;
+                height: 24px;
+              }
+
+                  .table_details .pages img{
+                    height: 24px;
+                  }
+
+                  .table_details .pages div{
+                    height: 24px;
+                    line-height: 24px;
+                    vertical-align: middle;
+                  }
+
+                      .table_details .pages a{
+                        display: inline-block;
+                        vertical-align: top;
+                        margin: 0 10px;
+                      }
+
+    .msg-contents .top-leftinner p{
+      font-size: 14px;
+      font-size: 1.4rem;
+      line-height: 16px;
+      height: 16px;
+      color: rgb(163, 0, 38);
+      margin-bottom: 15px;
+    }
+
+        .msg-contents .top-leftinner p img{
+          vertical-align: middle;
+        }
+
+        .msg-contents .top-leftinner p span{
+          vertical-align: middle;
+          display: inline-block;
+        }
+
+        .msg-contents .top-leftinner p span .underline{
+          text-decoration: underline;
+        }
+
+    .msg-contents .msg-bottominner ul{
+      list-style: none;
+      padding: 0;
+      font-size: 13px;
+      font-size: 1.3rem;
+    }
+
+    .msg-contents .msg-bottominner ul:before, .msg-contents .msg-bottominner ul:after {
+          content: "";
+          display: block;
+        }
+
+        .msg-contents .msg-bottominner ul:after {
+          clear: both;
+        }
+
+        .msg-contents .msg-bottominner ul {
+           zoom: 1;
+           letter-spacing: -0.09em;
+         }
+
+        .msg-contents .msg-bottominner ul li:nth-child(odd) {
+          float: left;
+          width: 60%;
+          margin-bottom: 5px;
+        }
+
+        .msg-contents .msg-bottominner ul li:nth-child(even) {
+          float: right;
+          width: 40%;
+          margin-bottom: 5px;
+        }
+
+
+/* 【company.html】 */
+#company_details {
+  display: none;
+}
+
+#company-contents {
+  background: #FFFAF8;
+  padding: 20px 20px 40px 20px;
+}
+
+#company-contents .subtitle-contents{
+  background: #FF4E00;
+}
+
+#company-contents .subtitle-contents .subtitle-contents .subtitle_leftinner p {
+  color: #333;
+}
+
+#company-contents .table-contents table tr th:nth-child(1), #company-contents .table-contents table tr td:nth-child(1){
+  width: 15%;
+} {
+
+}
+
+    .company_topinner:before, .company_topinner:after {
+          content: "";
+          display: block;
+        }
+
+        .company_topinner:after {
+          clear: both;
+        }
+
+        .company_topinner {
+           zoom: 1;
+         }
+
+            .company_topinner .company {
+              float: left;
+              width: 40%;
+              padding-right: 3px;
+              box-sizing: border-box;
+            }
+
+            .company_topinner .accessed_pages {
+              float: left;
+              width: 60%;
+              padding-left: 3px;
+              box-sizing: border-box;
+            }
+
+#company_detailsinner{
+  position: relative;
+  max-height: 1540px;
+}
+
+.back_to_top{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+    .back_inner{
+      height: 40px;
+      line-height: 40px;
+    }
+
+        .back_to_top img{
+          height: 25px;
+          vertical-align: middle;
+        }
+
+        .back_to_top a{
+          line-height: 40px;
+          vertical-align: middle;
+          font-size: 14px;
+          font-size: 1.4rem;
+        }
+
+            .back_to_top a:hover{
+              cursor: pointer;
+              color: rgb(163, 0, 38);
+            }
+
+/* 【company.html】 企業情報*/
+.company-contents {
+  background: #fff;
+  box-shadow: 1px 1px 10px #aaa;
+  padding: 45px 20px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+#company-contents .subtitle-contents{
+  padding: 0 20px;
+}
+
+    .company-contents table{
+      width: 100%;
+    }
+
+    .company-contents td{
+      width: 70%;
+      padding-bottom: 10px;
+      vertical-align: top;
+      font-size: 13px;
+    }
+
+        .company-contents tbody tr:nth-child(6) td:nth-child(2) {
+          letter-spacing: -0.02em;
+        }
+
+    .company-contents .title{
+      width: 30%;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+        .mailing_address:before, .mailing_address:after {
+              content: "";
+              display: block;
+            }
+
+            .mailing_address:after {
+              clear: both;
+            }
+
+            .mailing_address {
+               zoom: 1;
+               position: relative;
+               font-size: 12px !important;
+             }
+
+                 .mailing_address .address {
+                    float: left;
+                    width: 84%;
+                    letter-spacing: -0.09em;
+                  }
+
+                  .mailing_address .map {
+                     float: right;
+                     width: 15%;
+                     height: 100%;
+                     min-height: 100%;
+                     overflow: hidden;
+                     position: absolute;
+                     right: 0;
+                     bottom: 0;
+                     font-size: 11px;
+                     font-size: 1.1rem;
+                   }
+
+                       .mailing_address .map-inner{
+                         position: absolute;
+                         right: 0;
+                         top: 2px;
+                        }
+
+                            .mailing_address .map-inner img{
+                              height: 12px;
+                              vertical-align: bottom;
+                              margin-bottom: 2px;
+                             }
+
+                             .mailing_address .map-inner a{
+                               height: 20px;
+                               vertical-align: bottom;
+                               color: #707070;
+                               text-decoration: none;
+                              }
+
+                                  .mailing_address .map-inner a:hover{
+                                    text-decoration: underline;
+                                    color: rgb(163, 0, 38);
+                                   }
+
+/* 【company.html】 閲覧したページ*/
+.accessed_pages .subtitle-contents .subtitle_leftinner{
+  width: 60%;
+}
+
+.accessed_pages .subtitle-contents .subtitle_rightinner{
+  width: 40%;
+}
+
+.accessed_pages-contents {
+ background: #fff;
+ box-shadow: 1px 1px 10px #aaa;
+ padding: 20px;
+ margin-bottom: 6px;
+ font-size: 14px;
+ font-size: 1.4rem;
+ min-height: 860px;
+ max-height: 860px;
+}
+
+    .accessed_pages-contents td{
+      width: 40%;
+    }
+
+    .accessed_pages-contents .long_text{
+      width: 60%;
+    }
+
+    .accessed_pages-contents .table-contents table a:hover{
+      color: #FF4E00;
+    }
+
+    .accessed_pages-contents .table_details .numbers {
+      padding-left: 0;
+    }
+
+    .accessed_pages-contents .msg-contents{
+      margin-left: 0;
+    }
+
+        .accessed_pages-contents .msg-contents .msg-bottominner p {
+          line-height: 1;
+          color: #FF4E00;
+         }
+
+             .accessed_pages-contents .msg-contents .msg-bottominner p img{
+               height: 20px;
+               vertical-align: middle;
+              }
+
+                  .accessed_pages-contents .msg-contents .msg-bottominner p .underline{
+                    text-decoration: underline;
+                   }
+
+
+/* 【company.html】日別総アクセス数推移グラフ */
+.monthly_access .chart_inner {
+ background: #fff;
+ box-shadow: 1px 1px 10px #aaa;
+ padding: 20px 60px;
+ margin-bottom: 6px;
+ font-size: 14px;
+ font-size: 1.4rem;
+}
+
+    .monthly_access .chart_inner .msg-contents{
+      margin-top: 10px;
+    }
+
+.bar_chart{
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+}
+
+
+/* 【index.html】日別総アクセス数推移グラフ */
+.daily_access {
+  margin-top: 30px;
+}
+
+.line_chart{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.msg-contents .msg-bottominner p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  letter-spacing: -0.08em;
+  margin-bottom: 5px;
+ }
+
+.msg-contents {
+  position: relative;
+}
+ .back_to_top2{
+   position: absolute;
+   bottom: 0px;
+   right: -18px;
+ }
+
+    .back_to_top2 .back_inner {
+      height: 28px;
+      line-height: 28px;
+    }
+
+         .back_to_top2 img{
+           height: 19px;
+           vertical-align: middle;
+         }
+
+         .back_to_top2 a{
+           line-height: 35px;
+           vertical-align: middle;
+           font-size: 13px;
+           font-size: 1.3rem;
+         }
+
+             .back_to_top2 a:hover{
+               cursor: pointer;
+               color: rgb(163, 0, 38);
+             }
+
+			.text-container1:before, .text-container1:after {
+		content: "";
+		display: block;
+  }
+
+  .text-container1:after {
+    clear: both;
+  }
+
+   {
+     zoom: 1;
+   }
+
+      .text-container1-left {
+        float: left;
+        width: 5.5%;
+      }
+
+      .text-container1-right {
+        float: right;
+        width: 94.5%;
+      } 
